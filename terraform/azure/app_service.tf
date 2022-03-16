@@ -26,10 +26,10 @@ resource azurerm_app_service "app-service1" {
   resource_group_name = azurerm_resource_group.example.name
   https_only          = true
   site_config {
-    ftps_state = "Disabled"
+    ftps_state               = "Disabled"
     dotnet_framework_version = "v6.0"
-    http2_enabled = true
-    min_tls_version = "1.2"
+    http2_enabled            = true
+    min_tls_version          = "1.2"
   }
   tags = {
     git_commit           = "81738b80d571fa3034633690d13ffb460e1e7dea"
@@ -49,7 +49,7 @@ resource azurerm_app_service "app-service1" {
     type = "AzureFiles"
   }
   logs {
-    failed_request_tracing_enabled = true
+    failed_request_tracing_enabled  = true
     detailed_error_messages_enabled = true
   }
   identity = true
@@ -76,16 +76,16 @@ resource azurerm_app_service "app-service2" {
     yor_trace            = "ec8295ab-af68-4cff-b0f1-b0cf5eaf1b75"
   }
   site_config {
-    ftps_state = "Disabled"
+    ftps_state               = "Disabled"
     dotnet_framework_version = "v6.0"
-    http2_enabled = true
+    http2_enabled            = true
   }
   client_cert_enabled = true
   storage_account {
     type = "AzureFiles"
   }
   logs {
-    failed_request_tracing_enabled = true
+    failed_request_tracing_enabled  = true
     detailed_error_messages_enabled = true
   }
   identity = true
