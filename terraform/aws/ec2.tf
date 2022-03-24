@@ -57,12 +57,12 @@ resource "aws_ebs_snapshot" "example_snapshot" {
   tags = merge({
     Name = "${local.resource_prefix.value}-ebs-snapshot"
     }, {
-    git_commit           = "d68d2897add9bc2203a5ed0632a5cdd8ff8cefb0"
+    git_commit           = "d74b85970e9664b5defb21f528e610a22b5f1970"
     git_file             = "terraform/aws/ec2.tf"
-    git_last_modified_at = "2020-06-16 14:46:24"
-    git_last_modified_by = "nimrodkor@gmail.com"
-    git_modifiers        = "nimrodkor"
-    git_org              = "bridgecrewio"
+    git_last_modified_at = "2022-03-24 20:19:01"
+    git_last_modified_by = "92009631+bphanpcs@users.noreply.github.com"
+    git_modifiers        = "92009631+bphanpcs/nimrodkor"
+    git_org              = "bphanpcs"
     git_repo             = "terragoat"
     yor_trace            = "c1008080-ec2f-4512-a0d0-2e9330aa58f0"
   })
