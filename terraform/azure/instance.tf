@@ -65,12 +65,12 @@ resource azurerm_windows_virtual_machine "test_windows_machine" {
     terragoat   = true
     environment = var.environment
     }, {
-    git_commit           = "de3bb777f967989c2c3332faea16cb614c55ccc9"
+    git_commit           = "402be9dbf504bc67366aee3e2b655aebb77300a8"
     git_file             = "terraform/azure/instance.tf"
-    git_last_modified_at = "2020-06-17 15:48:15"
-    git_last_modified_by = "nimrodkor@gmail.com"
-    git_modifiers        = "nimrodkor"
-    git_org              = "bridgecrewio"
+    git_last_modified_at = "2022-09-30 20:52:55"
+    git_last_modified_by = "92009631+bphanpcs@users.noreply.github.com"
+    git_modifiers        = "92009631+bphanpcs/nimrodkor"
+    git_org              = "bphanpcs"
     git_repo             = "terragoat"
     yor_trace            = "41938587-bdfc-4234-b941-560f1ae7d6c0"
   })
