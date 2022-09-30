@@ -41,7 +41,7 @@ resource azurerm_linux_virtual_machine "linux_machine" {
   })
 }
 
-resource azurerm_windows_virtual_machine "windows_machine" {
+resource azurerm_windows_virtual_machine "test_windows_machine" {
   admin_password        = random_string.password.result
   admin_username        = "tg-${var.environment}"
   location              = var.location
